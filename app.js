@@ -8,7 +8,7 @@ const userRoutes = require('./api/routes/user');
 const timelineRoutes = require('./api/routes/attendance-approval');
 const leaveRoutes = require('./api/routes/leave');
 
-mongoose.connect('mongodb+srv://lomousHead:'+process.env.MONGO_ATLAS_PW+'@lomous-timesheet-p3ijh.mongodb.net/test?retryWrites=true&w=majority');
+mongoose.connect('mongodb+srv://lomousHead:lomous_data@lomous-timesheet-p3ijh.mongodb.net/test?retryWrites=true&w=majority');
 
 app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({extended: false}));
